@@ -25,10 +25,10 @@ def chinese(text):
 st.title('Language Translation App')
 text = st.text_area("Enter text here:", "")
 
-option = st.sidebar.selectbox(
+option = st.selectbox(
                              'Select a Language:',
                               ['French', 'German', 'Yoruba', 'Korean', 'Chinese'], index=0)
-st.sidebar.write('You selected:', option)
+st.write('You selected:', option)
 
 mode = 1
 
