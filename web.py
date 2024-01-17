@@ -23,7 +23,7 @@ def chinese(text):
     return translated
 
 st.title('Language Translation App')
-text = st.text_input('Enter your text here')
+text = st.text_area("Enter text here:", "")
 
 option = st.sidebar.selectbox(
                              'Select a Language:',
@@ -46,20 +46,31 @@ if option == 'Chinese':
 if mode==1:
      if st.button('Translate'):
         output = french(text)
-        st.success(output)
+        output_str = output
+        translated_text = output_str.text
+        st.success(translated_text)
+
 if mode==2:
      if st.button('Translate'):
         output = german(text)
-        st.success(output)
+        output_str = output
+        translated_text = output_str.text
+        st.success(translated_text)
 if mode==3:
      if st.button('Translate'):
         output = yoruba(text)
-        st.success(output)
+        output_str = output
+        translated_text = output_str.text
+        st.success(translated_text)
 if mode==4:
      if st.button('Translate'):
         output = Korean(text)
-        st.success(output)
+        output_str = output
+        translated_text = output_str.text
+        st.success(translated_text)
 if mode==5:
     if st.button('Translate'):
         output = chinese(text)
-        st.success(output)
+        output_str = output
+        translated_text = output_str.text
+        st.success(translated_text)
